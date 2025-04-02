@@ -63,15 +63,3 @@ Si experimentas algún problema, verifica lo siguiente:
 3. Comprueba que tienes conexión a Internet
 
 4. Para detalles específicos sobre un error, revisa el mensaje que se muestra en la aplicación.
-
-## Contribuciones
-
-Si deseas contribuir al proyecto, siéntete libre de:
-
-- Reportar errores o problemas
-- Sugerir nuevas características
-- Enviar pull requests con mejoras o correcciones
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
