@@ -35,7 +35,7 @@ pip install -r requirements.txt
 1. Ejecuta la aplicación:
 
 ```bash
-python youtube_downloader_pytubefix.py
+python youtube_downloader.py
 ```
 
 2. Ingresa la URL del video de YouTube que deseas descargar
