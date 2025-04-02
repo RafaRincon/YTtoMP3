@@ -10,12 +10,13 @@ Una aplicación de escritorio desarrollada en Python que permite descargar músi
 - Selección de carpeta de destino personalizada
 - Barra de progreso para visualizar el avance de la descarga
 - Manejo de errores robusto
+- Compatible con los cambios recientes en la API de YouTube
 
 ## Requisitos
 
 - Python 3.6 o superior
 - Bibliotecas de Python (instalables mediante `pip`):
-  - pytube (para la descarga de videos de YouTube)
+  - pytubefix (para la descarga de videos de YouTube)
   - moviepy (para la conversión de audio)
   - tkinter (incluido con Python)
 
@@ -34,48 +35,43 @@ pip install -r requirements.txt
 1. Ejecuta la aplicación:
 
 ```bash
-python main.py
+python youtube_downloader_pytubefix.py
 ```
 
 2. Ingresa la URL del video de YouTube que deseas descargar
 3. Selecciona la carpeta donde quieres guardar el archivo MP3
-4. Haz clic en "Descargar MP3"
+4. Haz clic en "DOWNLOAD"
 5. ¡Listo! La aplicación descargará el audio y lo convertirá a MP3 automáticamente
 
-## Estructura del Proyecto
+## Notas Importantes
 
-```
-youtube_mp3_downloader/
-│
-├── requirements.txt
-├── main.py                   # Punto de entrada de la aplicación
-├── README.md                 # Documentación del proyecto
-│
-├── downloader/
-│   ├── __init__.py
-│   ├── youtube_client.py     # Clase para interactuar con YouTube
-│   ├── converter.py          # Clase para convertir audio
-│   └── download_manager.py   # Orquestador del proceso de descarga
-│
-└── ui/
-    ├── __init__.py
-    ├── app.py                # Clase principal de la aplicación
-    ├── main_window.py        # Ventana principal
-    └── styles.py             # Estilos de la UI
-```
+- Esta aplicación usa `pytubefix` en lugar de `pytube` debido a que esta última ha dejado de funcionar correctamente con los cambios recientes en YouTube.
+- La aplicación está diseñada para uso personal y educativo.
+- Respeta los derechos de autor y los términos de servicio de YouTube al utilizar esta herramienta.
 
-## Posibles Mejoras Futuras
+## Solución de Problemas
 
-- Añadir soporte para listas de reproducción
-- Implementar opciones de calidad de audio
-- Agregar metadatos al archivo MP3 (artista, título, etc.)
-- Permitir descargas simultáneas
-- Soporte para otros formatos de audio (WAV, FLAC, etc.)
+Si experimentas algún problema, verifica lo siguiente:
+
+1. Asegúrate de tener instalada la versión más reciente de pytubefix:
+   ```
+   pip install --upgrade pytubefix
+   ```
+
+2. Verifica que la URL sea correcta y que el video no tenga restricciones (edad, región, etc.)
+
+3. Comprueba que tienes conexión a Internet
+
+4. Para detalles específicos sobre un error, revisa el mensaje que se muestra en la aplicación.
+
+## Contribuciones
+
+Si deseas contribuir al proyecto, siéntete libre de:
+
+- Reportar errores o problemas
+- Sugerir nuevas características
+- Enviar pull requests con mejoras o correcciones
 
 ## Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
-
-## Descargo de Responsabilidad
-
-Esta aplicación está diseñada con fines educativos y personales. Asegúrate de cumplir con los términos de servicio de YouTube y respetar los derechos de autor al utilizar este software.
