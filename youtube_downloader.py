@@ -13,7 +13,7 @@ import re
 import urllib.request
 import urllib.error
 from pytubefix import YouTube
-from moviepy.editor import AudioFileClip
+from moviepy import AudioFileClip
 
 class YouTubeMP3Downloader:
     def __init__(self, root):
